@@ -2,6 +2,7 @@ package com.qfy.demoboot.controller;
 
 import com.qfy.demoboot.entity.Student;
 import com.qfy.demoboot.service.StudentService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,6 +44,7 @@ public class DbController {
     }
 
     @GetMapping("/getList")
+    @ApiOperation(value = "获取用户列表")
     public List<Student> getList(){
         List<Student> list = studentService.getList();
         return list;
