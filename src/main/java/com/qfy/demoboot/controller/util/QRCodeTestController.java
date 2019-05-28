@@ -19,7 +19,7 @@ public class QRCodeTestController {
     public void generateQRCode4Product(HttpServletRequest request, HttpServletResponse response) {
         String longUrl;
         try {
-            longUrl = "https://www.jianshu.com/u/c0aa31157ba5";
+            longUrl = "www.baidu.com";
             // 转换成短url
             String shortUrl = ShortNetAddressUtil.generateShortUrl(longUrl);
             // 生成二维码

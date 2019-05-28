@@ -14,8 +14,13 @@ public class StudentServiceImpl implements StudentService {
     @Autowired
     private StudentMapper dao;
 
+    /**
+     * @author qfy
+     * @date 2019/5/25 15:09
+     */
     @Override
     public List<Student> getList() {
         return dao.getList();
     }
+    
 }
